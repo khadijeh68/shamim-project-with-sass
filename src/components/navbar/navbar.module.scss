@@ -1,0 +1,54 @@
+@import "../../variables";
+@import "../../shares";
+
+.navbar {
+  width: 100%;
+  height: 105px;
+  @include flex;
+  font-family: Vazir-Medium;
+  @include padding($top: null, $right: null, $bottom: null, $left: 0.8rem);
+  box-shadow: 0 0 6px rgb(177, 177, 177);
+  background-color: map-get($colors, "primary");
+
+  .img {
+    @include padding($top: null, $right: null, $bottom: null, $left: 25px);
+  }
+
+  .menu {
+    @include flex;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .item {
+    color: map-get($colors, "fourth");
+    border-width: 1px;
+    border-style: solid;
+    border-color: map-get($colors, "secondary");
+    @include border-radius;
+    @include padding($top: 5px, $right: 10px, $bottom: 5px, $left: 10px);
+    margin-left: 12px;
+
+    span {
+      width: 20px;
+      @include position;
+      background: map-get($colors, "third");
+      height: 20px;
+      @include border-radius;
+      text-align: center;
+      color: map-get($colors, "primary");
+      font-size: small;
+      @include padding($top: 2px, $right: null, $bottom: null, $left: null);
+    }
+
+    svg {
+      @include padding($top: 5px, $right: null, $bottom: null, $left: null);
+    }
+  }
+
+  .logo {
+    @include padding($top: null, $right: 25px, $bottom: null, $left: null);
+  }
+}

@@ -1,0 +1,22 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin border-radius {
+    border-radius: 50%;
+}
+
+@mixin position {
+    position: absolute;
+    left: 220px;
+    top: 25px;
+}  
+    
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
