@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import styles from "./dashboard.module.scss";
 import { RiDashboardFill, RiBillLine } from "react-icons/ri";
 import { BiUserCircle, BiChat, BiMailSend } from "react-icons/bi";
 import { BsPersonPlus, BsEject } from "react-icons/bs";
@@ -8,7 +8,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className={styles.dashboard}>
       <ul>
         <li>
           <NavLink to="/">
@@ -23,8 +23,8 @@ const Dashboard = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/">
-            <BiChat size={22}/>
+          <NavLink to="/" className={styles.chatNumber}>
+            <BiChat size={22} className={styles.chat}/>
             گفتگوها
             <span>{digitsEnToFa(3)}</span>
           </NavLink>
@@ -54,7 +54,7 @@ const Dashboard = () => {
           </NavLink>
         </li>
       </ul>
-      <IoIosArrowDropright size={22}/>
+      <IoIosArrowDropright size={22} className={styles.svg}/>
     </div>
   );
 };

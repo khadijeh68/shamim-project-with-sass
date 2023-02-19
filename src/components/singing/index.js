@@ -1,4 +1,4 @@
-
+import styles from "./singing.module.scss";
 import { RiDeleteBinLine } from "react-icons/ri";
 import {
   BsPencilSquare,
@@ -9,47 +9,46 @@ import books from "../../assets/images/books.png";
 
 const Singing = () => {
   return (
-    <div>
-      <div >
+    <div className={styles.singing}>
+      <div className={styles.singing_title}>
         <span>گویندگی و خوانندگی</span>
         <BsPencilSquare size={18} />
         <RiDeleteBinLine style={{ color: "red" }} size={20} />
       </div>
-      <div >
-        <div>
+      <div className={styles.singing_row}>
+        <div className={styles.singing_image}>
           <img src={books} alt="books" />
-          <span >
+          <span className={styles.dotIcon}>
             <BsThreeDotsVertical />
           </span>
-          <span>
+          <span className={styles.singing_rowSpan}>
           خوانش کتاب صوتی "کتابخانه نیمه شب"
           </span>
         </div>
-        <div>
+        <div className={styles.singing_image}>
           <img src={books} alt="books" />
-          <span>
+          <span className={styles.dotIcon}>
             <BsThreeDotsVertical />
           </span>
-          <span>
+          <span className={styles.singing_rowSpan}>
           خوانش کتاب صوتی "کتابخانه نیمه شب"
           </span>
         </div>
-        <div >
+        <div className={styles.singing_image}>
           <img src={books} alt="books" />
-          <span>
+          <span className={styles.dotIcon}>
             <BsThreeDotsVertical />
           </span>
-          <span>
+          <span className={styles.singing_rowSpan}>
           خوانش کتاب صوتی "کتابخانه نیمه شب"
           </span>
         </div>
-        <div>
-          <span>
-            {" "}
+        <div className={styles.singing_addBtn}>
+          <span className={styles.singing_plusBtn}>
             <BsPlusCircle size={20} />
             افزودن اثر{" "}
           </span>
-          <span >
+          <span  className={styles.singing_moreDisplay}>
             نمایش <br />
             بیشتر...
           </span>

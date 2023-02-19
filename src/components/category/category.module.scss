@@ -1,0 +1,51 @@
+@import "../../variables";
+@import "../../shares";
+
+.category {
+  @include margin($top: 92px, $right: 25px, $bottom: null, $left: null);
+  @include borderRadius;
+  font-size: 1rem;
+
+  p {
+    @include margin($top: -80px, $right: null, $bottom: null, $left: null);
+    color: map-get($colors, "fifth");
+  }
+}
+
+.category_rowOne {
+  @include flex;
+}
+
+.displayTop {
+  @include flexAlign;
+  font-size: small;
+
+  img {
+    width: 65px;
+    height: 33px;
+    @include margin($top: null, $right: 5px, $bottom: null, $left: null);
+  }
+
+  span {
+    opacity: 70%;
+  }
+}
+
+.category button {
+  width: 200px;
+  height: 40px;
+  background-color: map-get($colors, "primary");
+  @include borderRadius;
+  border: map-get($colors, "primary");
+  color: map-get($colors, "sixth");
+  @include margin($top: 20px, $right: null, $bottom: null, $left: null);
+  cursor: pointer;
+}
+
+.btn {
+  @include flexCenter;
+}
+
+.btn svg {
+  @include margin($top: null, $right: null, $bottom: null, $left: 20px);
+}

@@ -1,0 +1,70 @@
+@import "../../variables";
+@import "../../shares";
+
+.dashboard {
+  width: 220px;
+  height: 1230px;
+  font-size: 1rem;
+  @include padding($top: 25px, $right: 12px, $bottom: null, $left: null);
+  @include margin($top: 1px, $right: null, $bottom: null, $left: null);
+  background-color: map-get($colors, "primary");
+
+  a {
+    @include flexAlign;
+    text-decoration: none;
+    cursor: pointer;
+    @include padding($top: null, $right: null, $bottom: null, $left: 10px);
+    width: 200px;
+    height: 50px;
+    color: map-get($colors, "nonth");
+
+    &:hover {
+      color: map-get($colors, "seventh");
+      background-color: map-get($colors, "eighth");
+      border-radius: 10px;
+      border: 1px solid map-get($colors, "eighth");
+      border-right-width: 4px;
+      border-right-color: map-get($colors, "sixth");
+      width: 200px;
+      height: 50px;
+      @include padding($top: null, $right: 10px, $bottom:null, $left: 10px);
+    }
+  }
+
+  li {
+    @include padding($top: null, $right: null, $bottom: 15px, $left: null);
+  }
+
+  span {
+    @include padding($top: null, $right: 10px, $bottom: null, $left: null);
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .chatNumber span {
+    width: 20px;
+    position: absolute;
+    right: 120px;
+    top: 275px;
+    background: map-get($colors, "sixth");
+    height: 20px;
+    @include border-radius;
+    text-align: center;
+    color: map-get($colors, "primary");
+    font-size: small;
+    @include padding($top: 2px, $right: 0px, $bottom: null, $left: null);
+  }
+
+  .chat {
+    @include margin($top: null, $right: null, $bottom: null, $left: 10px);
+  }
+}
+
+.svg {
+  position: absolute;
+  right: 210px;
+  top: 950px;
+  color: map-get($colors, "seventh");
+}

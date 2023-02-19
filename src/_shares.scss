@@ -1,22 +1,44 @@
-@mixin flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexAlign {
+    display: flex;
+    align-items: center;
+  }
 
 @mixin border-radius {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
+@mixin borderRadius {
+    border-radius: 20px;
+  }
+
 @mixin position {
-    position: absolute;
-    left: 220px;
-    top: 25px;
-}  
-    
+  position: absolute;
+  left: 220px;
+  top: 25px;
+}
+
 @mixin padding($top: null, $right: null, $bottom: null, $left: null) {
-    padding-top: $top;
-    padding-right: $right;
-    padding-bottom: $bottom;
-    padding-left: $left;
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
 }

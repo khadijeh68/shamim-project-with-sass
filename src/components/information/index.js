@@ -1,4 +1,4 @@
-
+import styles from "./information.module.scss";
 import {
   BsPencilSquare,
   BsGlobe,
@@ -9,83 +9,83 @@ import profile from "../../assets/images/profile.png";
 
 const Information = () => {
   return (
-    <div>
-      <div>
+    <div className={styles.information}>
+      <div className={styles.title}>
         <span>اطلاعات شناسایی</span>
-        <hr/>
+        <hr className={styles.divider}/>
         <span>
           <BsPencilSquare />
         </span>
       </div>
-      <div>
+      <div className={styles.profile}>
         <img src={profile} alt="profile" />
         <p>مهدی ساغری</p>
-        <div>
+        <div className={styles.icon}>
           <BsGlobe size={22} />
           <BsWhatsapp size={22} />
           <BsFacebook size={22} />
         </div>
       </div>
-      <div>
+      <div className={styles.title}>
         <span>تگ لاین ها</span>
-        <hr/>
+        <hr className={styles.divider}/>
         <span>
           <BsPencilSquare />
         </span>
       </div>
-      <div>
-        <ul>
+      <div className={styles.tagLines}>
+        <ul className={styles.tagLines}>
           <li>تجربه کاربری </li>
           <li>طراحی سایت</li>
           <li>گرافیک</li>
         </ul>
       </div>
-      <div>
+      <div className={styles.title}>
         <span>درباره من</span>
-        <hr />
+        <hr className={styles.divider}/>
         <span>
           <BsPencilSquare />
         </span>
       </div>
-      <p >
+      <p className={styles.aboutMe}>
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است.
       </p>
-      <div >
+      <div className={styles.title}>
         <span>مهارت ها</span>
-        <hr />
+        <hr className={styles.divider}/>
         <span>
           <BsPencilSquare />
         </span>
       </div>
-      <div >
-        <ul >
+      <div className={styles.tagLines}>
+        <ul className={styles.tagLines}>
           <li>تجربه کاربری </li>
           <li>طراحی سایت</li>
           <li>گرافیک</li>
         </ul>
       </div>
-      <div >
+      <div className={styles.title}>
         <span>گواهینامه ها و مدارک تحصیلی</span>
-        <hr  />
+        <hr className={styles.divider} />
         <span>
           <BsPencilSquare />
         </span>
       </div>
       <div>
-        <ul >
+        <ul className={styles.certificate}>
           <li>کارشناسی کامپیوتر - دانشگاه تبریز</li>
           <li>مبانی طراحی - Udemy</li>
         </ul>
       </div>
-      <div>
+      <div className={styles.title}>
         <span>سوابق شغلی</span>
-        <hr />
+        <hr className={styles.divider} />
         <span>
           <BsPencilSquare />
         </span>
       </div>
-      <div>
+      <div className={styles.job}>
         <ul>
           <li>تجربه رابط کاربری - شرکت همراه</li>
           <li>طراح گرافیک - شرکت آینده سازان</li>

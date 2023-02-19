@@ -1,0 +1,86 @@
+@import "../../variables";
+@import "../../shares";
+
+.montage {
+  width: 865px;
+  height: 310px;
+  background-color: map-get($colors, "primary");
+  @include padding($top: 20px, $right: 20px, $bottom: 20px, $left: 20px);
+  border-radius: 20px;
+
+  &_title {
+    @include flexAlign;
+    @include padding($top: null, $right: null, $bottom: null, $left: 10px);
+  }
+
+  &_title span {
+    color: map-get($colors, "sixth");
+    @include padding($top: null, $right: null, $bottom: null, $left: 10px);
+  }
+
+  &_title svg {
+    @include margin($top: null, $right: null, $bottom: null, $left: 10px);
+    cursor: pointer;
+  }
+
+  &_image {
+    display: flex;
+    flex-direction: column;
+    @include margin($top: null, $right: null, $bottom: null, $left: 10px);
+    box-shadow: 0 4px 8px 0 rgba(199, 198, 198, 0.2);
+    border-radius: 15px;
+  }
+
+  &_row {
+    display: flex;
+    @include margin($top: 10px, $right: null, $bottom: null, $left: null);
+    height: 220px;
+  }
+
+  &_rowSpan {
+    @include margin($top: 20px, $right: null, $bottom: null, $left: null);
+    font-size: 14px;
+    text-align: center;
+    color: #5f656c;
+  }
+
+  .dotIcon {
+    position: absolute;
+    @include margin($top: 15px, $right: 10px, $bottom: null, $left: null);
+    background: map-get($colors, "primary");
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+
+    svg {
+      @include margin($top: 5px, $right: null, $bottom: null, $left: null);
+    }
+  }
+  &_addBtn {
+    font-size: 14px;
+    @include flexAlign;
+    justify-content: space-around;
+    flex-direction: column;
+    @include margin($top: 70px, $right: 20px, $bottom: null, $left: null);
+  }
+
+  &_plusBtn {
+    color: map-get($colors, "sixth");
+    @include flexAlign;
+    flex-direction: column;
+    @include padding($top: null, $right: null, $bottom: 20px, $left: null);
+    cursor: pointer;
+  }
+
+  &_plusBtn svg {
+    @include margin($top: null, $right: null, $bottom: 10px, $left: null);
+  }
+
+  &_moreDisplay {
+    opacity: 60%;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}

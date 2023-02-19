@@ -1,4 +1,4 @@
-
+import styles from "./category.module.scss";
 import displayTop from "../../assets/images/displayTop.png";
 import Montage from "../montage";
 import Design from "../design";
@@ -8,17 +8,17 @@ import { HiOutlineFolderDownload } from "react-icons/hi";
 const Category = () => {
   return (
     <>
-      <div>
-        <div>
+      <div className={styles.category}>
+        <div className={styles.category_rowOne}>
           <p>آثار من:</p>
-          <p>
+          <p className={styles.displayTop}>
             <span>نوع نمایش:</span> <img src={displayTop} alt="displayTop" />
           </p>
         </div>
         <Montage />
         <Design />
         <Singing />
-        <button>
+        <button  className={styles.btn}>
           <HiOutlineFolderDownload size={20} />
           <span>افزودن دسته جدید</span>
         </button>
